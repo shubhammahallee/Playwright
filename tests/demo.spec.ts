@@ -19,5 +19,6 @@ test('Basic Demo Test', async () => {
 
     await page.close();
     await browser.close();
+    await context.close();
 });
 
