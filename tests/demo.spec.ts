@@ -8,6 +8,8 @@ test('Basic Demo Test', async () => {
 
 
     await page.goto("https://apps.credence.in/practice/");
+    await expect(page.getByText('Practice Page')).toBeVisible();
+
 
     await page.close();
     await browser.close();
