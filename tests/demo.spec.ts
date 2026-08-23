@@ -1,10 +1,8 @@
 import { test, expect, chromium } from '@playwright/test';
 
 
-test('Basic Demo Test', async () => {
-    const browser = await chromium.launch();
-    const context = await browser.newContext();
-    const page = await context.newPage();
+test('Basic Demo Test', async ({ page }) => {
+
 
 
     await page.goto("https://apps.credence.in/practice/");
@@ -14,11 +12,12 @@ test('Basic Demo Test', async () => {
     await page.locator('//select[@id="dropdown-class-example"]').selectOption('Option3');
     await page.getByLabel('Option3').check();
     await page.locator("//label[@for='male']").click();
+
+    await page.locator("//a[@class='orangeButton']//i[@class='ph-icon-chevron-right']").click();
     await page.screenshot({ path: "./screenshots/screenshot.png" });
 
 
-    await page.close();
-    await browser.close();
-    await context.close();
+
+
 });
 
