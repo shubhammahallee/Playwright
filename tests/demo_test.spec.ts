@@ -12,7 +12,7 @@ test('hub testing', async ({ page }) => {
     // Skip ad with error handling
     try {
         await page.locator("//button[contains(text(), 'Werbung')]").waitFor({ state: 'visible', timeout: 5000 });
-        await page.locator("//button[contains(text(), 'Werbung')]").click();
+        await page.locator("//button[contains(text(), 'Werbung')]").click(); 
     } catch (e) {
         console.log("Skip button not found, continuing...");
     }
