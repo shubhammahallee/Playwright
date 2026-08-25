@@ -1,6 +1,6 @@
 import { test } from '@playwright/test' 
 
-test('hub testing', async ({ page }) => {
+test('hub testing', async ({ page }) => { 
     await page.goto("https://de.pornhub.org/");
     await page.waitForTimeout(2000);
     await page.locator("//button[normalize-space()='Ich bin 18 oder älter - Eingabe']").click();
