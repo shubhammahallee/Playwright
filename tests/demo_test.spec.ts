@@ -1,4 +1,4 @@
-import { test } from '@playwright/test'
+import { test } from '@playwright/test' 
 
 test('hub testing', async ({ page }) => {
     await page.goto("https://de.pornhub.org/");
