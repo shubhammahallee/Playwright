@@ -14,7 +14,7 @@ test('hub testing', async ({ page }) => {
         await page.locator("//button[contains(text(), 'Werbung')]").waitFor({ state: 'visible', timeout: 5000 });
         await page.locator("//button[contains(text(), 'Werbung')]").click(); 
     } catch (e) {
-        console.log("Skip button not found, continuing...");
+        console.log("Skip button not found, continuing..."); 
     }
 
     // Wait for page to load (reduce from 150000 to reasonable time)
