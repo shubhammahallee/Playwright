@@ -35,7 +35,7 @@ test('Search Testing', async ({ page }) => {
 
 
     // Search 
-    const search = page.locator("//input[@id='searchInput']");
+    const search = page.locator("//input[@id='searchInput']"); 
     await search.fill("Pink");
     await search.press('Enter');
 
