@@ -23,7 +23,7 @@ test('hub testing', async ({ page }) => {
 });
 
 test('Search Testing', async ({ page }) => {
-    await page.goto("https://de.pornhub.org/video");
+    await page.goto("https://de.pornhub.org/video"); 
 
 
     // Age verification
