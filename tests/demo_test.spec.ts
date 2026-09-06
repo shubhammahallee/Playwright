@@ -31,7 +31,6 @@ test('Search Testing', async ({ page }) => {
     // Accept cookies
     await page.locator("//button[contains(@class, 'js-acceptGlobalCookies')]").click();
 
-
     // Search  
     const search = page.locator("//input[@id='searchInput']"); 
     await search.fill("Pink");
