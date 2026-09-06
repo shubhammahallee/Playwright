@@ -29,7 +29,6 @@ test('Search Testing', async ({ page }) => {
     // Age verification
     await page.locator("//button[normalize-space()='Ich bin 18 oder älter - Eingabe']").click();
 
-
     // Accept cookies
     await page.locator("//button[contains(@class, 'js-acceptGlobalCookies')]").click();
 
