@@ -3,8 +3,6 @@ import { test, expect, chromium } from '@playwright/test';
 
 test('Basic Demo Test', async ({ page }) => {
 
-
-
     await page.goto("https://apps.credence.in/practice/");
     await expect(page.getByText('Practice Page')).toBeVisible();  
     await page.getByLabel('Radio3').check();
