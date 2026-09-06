@@ -25,7 +25,6 @@ test('hub testing', async ({ page }) => {
 test('Search Testing', async ({ page }) => {
     await page.goto("https://de.pornhub.org/video"); 
 
-
     // Age verification
     await page.locator("//button[normalize-space()='Ich bin 18 oder älter - Eingabe']").click();
 
