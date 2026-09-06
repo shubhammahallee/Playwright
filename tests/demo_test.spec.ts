@@ -36,7 +36,6 @@ test('Search Testing', async ({ page }) => {
     await search.fill("Pink");
     await search.press('Enter');
 
-
     // Click first video result (more robust than long title)
     await page.locator("//a[@title='♥︎ Heiße großbrüstige Brünette züchten und sie zum Schreien ♥bringen ︎ Creampie nach HARTEM Missionar ohne Verhütung - Candy Love POV']").first().click();
     await page.locator("//button[contains(text(), 'Werbung')]").click(); 
